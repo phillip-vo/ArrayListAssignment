@@ -123,7 +123,7 @@ public class CookieArrayList{
 
     public boolean containsCookie(Cookie cookie) {
         for (int i = 0; i < currentSize; i++) {
-            if (cookie == cookies[i]) {
+            if (cookie.equals(cookies[i])) {
                 return true;
             }
         }
@@ -141,16 +141,15 @@ public class CookieArrayList{
     // Does cal1.length need to equal cal2.length?
     public boolean compareCookie(CookieArrayList cookies2) {
 
-
         // Check to see if lengths are equal
         if (cookies2.currentSize == this.currentSize) {
 
-            // Iterate through cookies2
+            // Traverse through cookies2
             for (int i = 0; i < cookies2.currentSize; i++) {
 
                 // if the cookie object in cookies2 at current index does not equal
                 // cookie object in cookies at current index return false
-                if (cookies2.getCookieAtIndex(i) != cookies[i]) {
+                if (!cookies2.getCookieAtIndex(i).equals(cookies[i])) {
                     return false;
                 }
             }

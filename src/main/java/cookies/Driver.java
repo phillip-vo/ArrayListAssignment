@@ -28,6 +28,16 @@ public class Driver {
         cookies.addCookie(c7);
         cookies.addCookie(c8);
 
+        Cookie c11 = new Cookie("chocolate chip", 100);
+        Cookie c12 = new Cookie("oatmeal", 100);
+        Cookie c13 = new Cookie("butter", 100);
+        Cookie c14 = new Cookie("strawberry", 100);
+        Cookie c15 = new Cookie("gingersnap", 100);
+        Cookie c16 = new Cookie("sugar", 100);
+        Cookie c17 = new Cookie("peanut butter", 100);
+        Cookie c18 = new Cookie("chocolate", 100);
+        Cookie c19 = new Cookie("butterscotch", 100);
+
         // Create a second CookieArrayList and add cookie objects to CookieArrayList
         CookieArrayList cookies2 = new CookieArrayList(4);
         cookies2.addCookie(c1);
