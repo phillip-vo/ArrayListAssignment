@@ -1,7 +1,5 @@
 package cookies;
 
-import java.util.Arrays;
-
 public class CookieArrayList{
 
     //    pseudocode

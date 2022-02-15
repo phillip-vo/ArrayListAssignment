@@ -63,9 +63,10 @@ public class Cookie extends Object{
     public Cookie(String type){
         this.type = type;
     }
-    public Cookie(String type, double grams){
+    public Cookie(String type, double grams) {
         this.type = type;
         this.grams = grams;
+
     }
 
     /*

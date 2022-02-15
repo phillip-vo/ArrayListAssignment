@@ -1,8 +1,21 @@
 package cookies;
 
-public class Driver {
-    public static void main(String[] args) {
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 
+public class Driver {
+
+    private static final Logger logger = LogManager.getLogger(Driver.class);
+
+    public static void main(String[] args) {
+    /*
+        // Basic log4j configurator
+        logger.info("Hello world");
+        logger.info("We are in logger info mode");
+    */
+
+        /*
         // Create CookieArrayList
         CookieArrayList cookies = new CookieArrayList(4);
 
@@ -51,40 +64,52 @@ public class Driver {
 
 
         // Test getCookieAtIndex
-        System.out.println("Cookie at index 4: " + cookies.getCookieAtIndex(4));
+        logger.info("Cookie at index 4: " + cookies.getCookieAtIndex(4));
 
 
         // Test getIndexOf method
-        System.out.println("Index of cookie c3: " + cookies.getIndexOfCookie(c3));
+        logger.info("Index of cookie c3: " + cookies.getIndexOfCookie(c3));
 
         // Test print method
-        System.out.println("Number of items in cookies: " + cookies.getCurrentSize());
+        logger.info("Number of items in cookies: " + cookies.getCurrentSize());
 
         // Test contains method and returns boolean
-        System.out.println("Is cookie c4 in cookies: " + cookies.containsCookie(c4));
-        System.out.println("Is cookie c9 in cookies: " + cookies.containsCookie(c9));
+        logger.info("Is cookie c4 in cookies: " + cookies.containsCookie(c4));
+        logger.info("Is cookie c9 in cookies: " + cookies.containsCookie(c9));
 
         // Test compareArrayList method
-        System.out.println("\nCookieArrayList cookies: " + cookies.toString());
-        System.out.println("CookieArrayList cookies2: " + cookies2.toString());
-        System.out.println("Does cookies equal cookies2: ");
-        System.out.println(cookies.compareCookie(cookies2));
+        logger.info("\nCookieArrayList cookies: " + cookies.toString());
+        logger.info("CookieArrayList cookies2: " + cookies2.toString());
+        logger.info("Does cookies equal cookies2: ");
+        logger.info(cookies.compareCookie(cookies2));
 
 
 
         // Print CookieArrayList cookies
-        System.out.println("\nArray of cookies:");
-        System.out.println(cookies.toString());
+        logger.info("\nArray of cookies:");
+        logger.info(cookies.toString());
 
         // Test setCookieAtIndex method and print
-        System.out.println("\nUpdated array of cookies:");
+        logger.info("\nUpdated array of cookies:");
         cookies.setCookieAtIndex(7, c9);
-        System.out.println(cookies.toString());
+        logger.info(cookies.toString());
 
         // Test compareArrayList method
-        System.out.println("\nCookieArrayList cookies: " + cookies.toString());
-        System.out.println("CookieArrayList cookies2: " + cookies2.toString());
-        System.out.println("Does cookies equal cookies2: ");
-        System.out.println(cookies.compareCookie(cookies2));
+        logger.info("\nCookieArrayList cookies: " + cookies.toString());
+        logger.info("CookieArrayList cookies2: " + cookies2.toString());
+        logger.info("Does cookies equal cookies2: ");
+        logger.info(cookies.compareCookie(cookies2));
+        */
+
+
+        // Test generic ArrayList class
+        GenericArrayList<String> numbers = new GenericArrayList<String>();
+        numbers.add("hi");
+        System.out.println(numbers.toString());
+        System.out.println(numbers.get(0));
+
+
+
+
     }
 }
