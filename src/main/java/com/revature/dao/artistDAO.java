@@ -12,7 +12,7 @@ import static com.revature.driver.Driver.conn;
 public class artistDAO {
 
     public List<Artist> getAllArtists() throws SQLException {
-        List<Artist> allArtists = new ArrayList<~>();
+        List<Artist> allArtists = new ArrayList<Artist>();
         Statement statement = conn.createStatement();
         ResultSet rs = statement.executeQuery("Select * From Artist");
         while(rs.next()) {
